@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@import "~vue-material/dist/theme/engine";
+
+@include md-register-theme("default", (
+  primary: #9B51E0,
+));
+
+@import "~vue-material/dist/components/MdButton/theme";
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+
+    @media screen and (max-width: 720px) {
+        padding: 0 20px;
+    }
+}
